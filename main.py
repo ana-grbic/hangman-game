@@ -1,9 +1,13 @@
 import random
 
-words = ["banana", "apple", "pear", "pineapple", "kiwi", "mango", "lemon", "peach", "melon", "apricot"]
+def load_words():
+    with open("words.txt", "r") as file:
+        words = file.read().splitlines()
+    return words
 
 def main():
     game_running = True
+    words = load_words()
     chosen_word = random.choice(words)
     guessed_letters = []
     wrong_guesses = 0

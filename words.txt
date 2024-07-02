@@ -1,0 +1,10 @@
+banana
+apple
+pear
+pineapple
+kiwi
+mango
+lemon
+peach
+melon
+apricot
