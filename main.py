@@ -1,9 +1,13 @@
 import random
+import tkinter
 
 def load_words():
     with open("words.txt", "r") as file:
         words = file.read().splitlines()
     return words
+
+m = tkinter.Tk(className="Hangman")
+m.mainloop()
 
 def main():
     game_running = True
